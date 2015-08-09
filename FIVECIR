@@ -1,0 +1,23 @@
+CLS
+SCREEN 12
+LINE (100, 80)-(540, 400), 15, BF
+x = 190: y = 200: r = 60
+FOR i = 0 TO 2
+c = i
+IF c = 2 THEN c = i + 2
+CIRCLE (x, y), r, c
+x = x + 130
+NEXT i
+x = 250: y = 270
+FOR i = 1 TO 2
+c = i
+IF c = 1 THEN c = 14
+IF c = 2 THEN c = 2
+CIRCLE (x, y), r, c
+x = x + 130
+NEXT i
+END
+
+
+
+
